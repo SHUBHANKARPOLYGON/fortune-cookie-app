@@ -41,7 +41,6 @@ class _MyHomePageState extends State<MyHomePage> {
     "You will have a great day tomorrow.",
     "You will have a great day the day after tomorrow.",
     "You will have a great day the day after the day after tomorrow.",
-    "You will have a great day the day after the day after the day after tomorrow.",
     "You will have a great day the day after the day after the day after the day after tomorrow.",
     "You will have a great day the day after the day after the day after the day after the day after tomorrow.",
   ];
