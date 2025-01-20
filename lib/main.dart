@@ -45,6 +45,10 @@ class _MyHomePageState extends State<MyHomePage> {
     "You will have a great day the day after the day after the day after the day after the day after tomorrow.",
   ];
 
+  void _randomFortune(){
+    
+  }
+
   void _incrementCounter() {
     setState(() {
      
