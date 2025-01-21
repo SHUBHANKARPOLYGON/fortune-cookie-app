@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main() {
   runApp(const MyApp());
@@ -34,6 +35,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  String _currentFortune = "";
 
   final _fortuneList = [
     "You will find happiness with a new love.",
@@ -46,7 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
   ];
 
   void _randomFortune(){
-    
+    var random = Random();
+    random.nextInt(_fortuneList.length);
   }
 
   void _incrementCounter() {
