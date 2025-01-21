@@ -45,11 +45,20 @@ class _MyHomePageState extends State<MyHomePage> {
     "You will have a great day the day after the day after tomorrow.",
     "You will have a great day the day after the day after the day after the day after tomorrow.",
     "You will have a great day the day after the day after the day after the day after the day after tomorrow.",
+    "You will have a great day the day after the day after the day after the day after the day after the day after tomorrow.",
+    "You will have a great day the day after the day after the day after the day after the day after the day after the day after tomorrow.",
+    "You will have a great day the day after the day after the day after the day after the day after the day after the day after the day after tomorrow.",
   ];
 
   void _randomFortune(){
     var random = Random();
-    random.nextInt(_fortuneList.length);
+    int fortune = random.nextInt(_fortuneList.length);
+    setState(() {
+      _currentFortune = _fortuneList[fortune];
+    });
+
+  
+    print (_currentFortune);
   }
 
   void _incrementCounter() {
@@ -79,14 +88,14 @@ class _MyHomePageState extends State<MyHomePage> {
               "Your Fortune is:",
             ),
             Text(
-              '${_fortuneList[_counter % _fortuneList.length]}',
+              '${_currentFortune}',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: _randomFortune,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
