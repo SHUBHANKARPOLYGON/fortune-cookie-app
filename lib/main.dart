@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
    MyHomePage({super.key});
 
-  String _currentFortune = "";
+  String _currentFortune = "1";
   
 
   @override
@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
   
     print (_currentFortune);
   }
-  
+
   void _incrementCounter() {
     setState(() {
      
