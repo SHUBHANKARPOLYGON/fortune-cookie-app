@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
               "Your Fortune is:",
             ),
             Text(
-              '${_currentFortune}',
+              '${_currentFortune }',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
