@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "Your Fortune is:",
+              "Your Fortune is",
             ),
             Text(
               '${_currentFortune }',
