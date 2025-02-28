@@ -32,7 +32,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
   String _currentFortune = "";
 
   final _fortuneList = [
@@ -53,13 +52,11 @@ class _MyHomePageState extends State<MyHomePage> {
     var random = Random();
     int fortune = random.nextInt(_fortuneList.length);
     setState(() {
-      _currentFortune = _fortuneList[fortune]; 
+      _currentFortune = _fortuneList[fortune];
     });
 
     print(_currentFortune);
   }
-
-  
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
               "Your Fortune is:",
             ),
             Text(
-              '${_currentFortune }',
+              '${_currentFortune}',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
