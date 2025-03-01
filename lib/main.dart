@@ -71,6 +71,12 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               "Your Fortune is:",
+              style: TextStyle(
+                fontSize:19,
+                fontWeight: FontWeight.bold,
+              ),
+
+
             ),
             Card(
               child: Text(
