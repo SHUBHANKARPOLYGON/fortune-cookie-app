@@ -72,12 +72,18 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               "Your Fortune is:",
               style: TextStyle(
-                fontSize:19,
+                fontSize: 19,
                 fontWeight: FontWeight.bold,
               ),
-
-
             ),
+
+            const SizedBox(height: 20),
+            FloatingActionButton.extended(
+              onPressed: _randomFortune,
+              label: const Text('Get Fortune'),
+              backgroundColor: Theme.of(context).colorScheme.secondary,
+            ),
+
             Card(
               child: Text(
               '${_currentFortune}',
@@ -88,11 +94,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _randomFortune,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
