@@ -72,10 +72,13 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               "Your Fortune is:",
             ),
-            Text(
+            Card(
+              child: Text(
               '${_currentFortune}',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            )
+            
           ],
         ),
       ),
