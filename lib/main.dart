@@ -66,11 +66,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("Your Fortune Teller",
-            style: TextStyle(
-              fontSize:25,
-              fontWeight: FontWeight.bold,
-            ),),
+            Text(
+              "Your Fortune Teller",
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
 
             Text(
               "Your Fortune is:",
@@ -80,24 +82,25 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
 
-            ElevatedButton(onPressed: _randomFortune, 
-            child: Text('My Fortune')
-            ), // ElevatedButton
-
             const SizedBox(height: 20),
             FloatingActionButton.extended(
               onPressed: _randomFortune,
               label: const Text('Get Fortune'),
-              
             ), // FloatingActionButton
 
             Card(
-              child: Text(
-              '${_currentFortune}',
-              style: Theme.of(context).textTheme.headlineMedium,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  '${_currentFortune}',
+                  style: Theme.of(context).textTheme.headlineMedium,
+                ),
+              ),
             ),
-            )
-            
+
+            ElevatedButton(
+                onPressed: _randomFortune,
+                child: Text('My Fortune')), // ElevatedButton
           ],
         ),
       ),
