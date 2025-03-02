@@ -76,21 +76,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-
             const SizedBox(height: 20),
             FloatingActionButton.extended(
               onPressed: _randomFortune,
               label: const Text('Get Fortune'),
               backgroundColor: Theme.of(context).colorScheme.secondary,
             ),
-
             Card(
               child: Text(
-              '${_currentFortune}',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+                '${_currentFortune}',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
             )
-            
           ],
         ),
       ),
