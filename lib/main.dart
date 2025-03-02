@@ -61,11 +61,17 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      appBar: AppBar(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text("Your Fortune Teller",
+            style: TextStyle(
+              fontSize:25,
+              fontWeight: FontWeight.bold,
+            ),),
+
             Text(
               "Your Fortune is:",
               style: TextStyle(
