@@ -80,12 +80,16 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
 
+            ElevatedButton(onPressed: _randomFortune, 
+            child: Text('My Fortune')
+            ), // ElevatedButton
+
             const SizedBox(height: 20),
             FloatingActionButton.extended(
               onPressed: _randomFortune,
               label: const Text('Get Fortune'),
-              backgroundColor: Theme.of(context).colorScheme.secondary,
-            ),
+              
+            ), // FloatingActionButton
 
             Card(
               child: Text(
