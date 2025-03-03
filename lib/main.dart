@@ -88,10 +88,10 @@ class _MyHomePageState extends State<MyHomePage> {
               label: const Text('Get Fortune'),
             ), // FloatingActionButton
 
-            Card(
-              child: Padding(
+            Card( // Main Widget
+              child: Padding( // Child Widget of Main Widget
                 padding: const EdgeInsets.all(8.0),
-                child: Text(
+                child: Text( // Child Widget of Padding
                   '${_currentFortune}',
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
