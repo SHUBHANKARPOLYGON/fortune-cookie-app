@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text( // Child Widget of Padding
                   '${_currentFortune}',
-                  style: Theme.of(context).textTheme.headlineMedium,
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
             ),
