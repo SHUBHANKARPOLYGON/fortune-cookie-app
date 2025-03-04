@@ -66,6 +66,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Image.asset(
+              'assets/images/fortune_cookie.png',
+                width: 200, 
+                height: 200, 
+                fit: BoxFit.cover,
+              ),
+
             Text(
               "Your Fortune Teller",
               style: TextStyle(
@@ -88,10 +95,13 @@ class _MyHomePageState extends State<MyHomePage> {
               label: const Text('Get Fortune'),
             ), // FloatingActionButton
 
-            Card( // Main Widget
-              child: Padding( // Child Widget of Main Widget
+            Card(
+              // Main Widget
+              child: Padding(
+                // Child Widget of Main Widget
                 padding: const EdgeInsets.all(8.0),
-                child: Text( // Child Widget of Padding
+                child: Text(
+                  // Child Widget of Padding
                   '${_currentFortune}',
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
