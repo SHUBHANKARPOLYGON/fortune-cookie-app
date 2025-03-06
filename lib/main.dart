@@ -46,6 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
     "You will have a great day the day after the day after the day after the day after the day after the day after the day after tomorrow.",
     "You will have a great day the day after the day after the day after the day after the day after the day after the day after the day after tomorrow.",
     "You will have a great day the day after the day after the day after the day after the day after the day after the day after the day after the day after tomorrow.",
+    "You will have a great day the day after the day after the day after the day after the day after the day after the day after the day after the day after the day after tomorrow.",
+    "You will have a great day",
   ];
 
   void _randomFortune() {
@@ -53,6 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
     int fortune = random.nextInt(_fortuneList.length);
     setState(() {
       _currentFortune = _fortuneList[fortune];
+
     });
 
     print(_currentFortune);
@@ -61,6 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(),
       body: Center(
         child: Column(
@@ -70,6 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'assets/images/fortune_cookie.png',
                 width: 200, 
                 height: 200, 
+
                 fit: BoxFit.cover,
               ),
 
@@ -77,6 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
               "Your Fortune Teller",
               style: TextStyle(
                 fontSize: 25,
+
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -85,6 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
               "Your Fortune is:",
               style: TextStyle(
                 fontSize: 19,
+
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -92,6 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(height: 20),
             FloatingActionButton.extended(
               onPressed: _randomFortune,
+
               label: const Text('Get Fortune'),
             ),
             
@@ -99,6 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'assets/images/fortune_cookie.png',
               width: 200,
               height: 200,
+
               fit: BoxFit.cover,
             ) , // FloatingActionButton
             Card(
