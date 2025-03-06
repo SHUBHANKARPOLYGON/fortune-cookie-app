@@ -74,7 +74,6 @@ class _MyHomePageState extends State<MyHomePage> {
               'assets/images/fortune_cookie.png',
                 width: 200, 
                 height: 200, 
-
                 fit: BoxFit.cover,
               ),
 
@@ -82,7 +81,6 @@ class _MyHomePageState extends State<MyHomePage> {
               "Your Fortune Teller",
               style: TextStyle(
                 fontSize: 25,
-
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -91,7 +89,6 @@ class _MyHomePageState extends State<MyHomePage> {
               "Your Fortune is:",
               style: TextStyle(
                 fontSize: 19,
-
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -99,7 +96,6 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(height: 20),
             FloatingActionButton.extended(
               onPressed: _randomFortune,
-
               label: const Text('Get Fortune'),
             ),
             
@@ -107,7 +103,6 @@ class _MyHomePageState extends State<MyHomePage> {
               'assets/images/fortune_cookie.png',
               width: 200,
               height: 200,
-
               fit: BoxFit.cover,
             ) , // FloatingActionButton
             Card(
