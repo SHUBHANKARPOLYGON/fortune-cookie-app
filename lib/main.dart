@@ -113,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text(
                   // Child Widget of Padding
                   '${_currentFortune}',
-                  style: Theme.of(context).textTheme.titleMedium,
+                  style: Theme.of(context).textTheme.titleLarge,
                 ),
               ),
             ),
