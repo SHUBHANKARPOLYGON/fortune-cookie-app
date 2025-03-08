@@ -97,14 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
             FloatingActionButton.extended(
               onPressed: _randomFortune,
               label: const Text('Get Fortune'),
-            ),
-            
-            Image.asset(
-              'assets/images/fortune_cookie.png',
-              width: 200,
-              height: 200,
-              fit: BoxFit.cover,
-            ) , // FloatingActionButton
+            ), // FloatingActionButton
             Card(
               // Main Widget
               child: Padding(
