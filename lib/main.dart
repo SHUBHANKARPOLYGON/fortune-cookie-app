@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import 'dart:math';
+import 'package:flutter/material.dart';  // Construction in UI
+import 'dart:math';  // Construction of Logic in Application // Library that generates that random Values
 
 void main() {
   runApp(const MyApp());
