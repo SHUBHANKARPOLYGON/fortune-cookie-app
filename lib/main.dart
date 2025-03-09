@@ -54,15 +54,15 @@ class _MyHomePageState extends State<MyHomePage> {
     var random = Random();
     int fortune = random.nextInt(_fortuneList.length);
     setState(() {
-      _currentFortune = _fortuneList[fortune];
+       _currentFortune = _fortuneList[fortune];
+      print("New Fortune==>: $_currentFortune");
 
     });
-
-    print(_currentFortune);
   }
 
   @override
   Widget build(BuildContext context) {
+    print("Building the Widget");
     return Scaffold(
 
       appBar: AppBar(),
