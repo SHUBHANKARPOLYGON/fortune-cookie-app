@@ -103,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Padding(
                 // Child Widget of Main Widget
                 padding: const EdgeInsets.all(8.0),
-                child: Text(
+                child:  Text(
                   // Child Widget of Padding
                   '${_currentFortune}',
                   style: Theme.of(context).textTheme.titleLarge,
