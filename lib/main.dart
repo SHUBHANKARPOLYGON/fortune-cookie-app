@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';  // Construction in UI
-import 'dart:math';  // Construction of Logic in Application // Library that generates that random Values
+import 'package:flutter/material.dart'; // Construction in UI
+import 'dart:math'; // Construction of Logic in Application // Library that generates that random Values
 
 void main() {
   runApp(const MyApp());
@@ -54,9 +54,8 @@ class _MyHomePageState extends State<MyHomePage> {
     var random = Random();
     int fortune = random.nextInt(_fortuneList.length);
     setState(() {
-       _currentFortune = _fortuneList[fortune];
+      _currentFortune = _fortuneList[fortune];
       print("New Fortune==>: $_currentFortune");
-
     });
   }
 
@@ -64,7 +63,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     print("Building the Widget");
     return Scaffold(
-
       appBar: AppBar(),
       body: Center(
         child: Column(
@@ -72,10 +70,10 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Image.asset(
               'assets/images/fortune_cookie.png',
-                width: 200, 
-                height: 200, 
-                fit: BoxFit.cover,
-              ),
+              width: 200,
+              height: 200,
+              fit: BoxFit.cover,
+            ),
 
             Text(
               "Your Fortune Teller",
@@ -103,9 +101,9 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Padding(
                 // Child Widget of Main Widget
                 padding: const EdgeInsets.all(8.0),
-                child:  Text(
+                child: Text(
                   // Child Widget of Padding
-                  '${_currentFortune}',
+                  _currentFortune,
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
               ),
@@ -114,8 +112,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
                 onPressed: _randomFortune,
                 child: Text('My Fortune')), // ElevatedButton
-
-               
           ],
         ),
       ),
