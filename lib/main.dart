@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
               fit: BoxFit.cover,
             ),
 
-            Text(
+            const Text(
               "Your Fortune Teller",
               style: TextStyle(
                 fontSize: 25,
@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
 
-            Text(
+            const Text(
               "Your Fortune is:",
               style: TextStyle(
                 fontSize: 19,
@@ -111,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
             ElevatedButton(
                 onPressed: _randomFortune,
-                child: Text('My Fortune')), // ElevatedButton
+                child: const Text('My Fortune')), // ElevatedButton
           ],
         ),
       ),
