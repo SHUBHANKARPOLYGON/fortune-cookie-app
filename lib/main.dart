@@ -30,8 +30,10 @@ class MyHomePage extends StatefulWidget {
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
+
 class _MyHomePageState extends State<MyHomePage> {
   String _currentFortune = "";
+
   final _fortuneList = [
     "You will find happiness with a new love.",
     "You will have a great day today.",
@@ -47,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
     "You will have a great day the day after the day after the day after the day after the day after the day after the day after the day after the day after the day after tomorrow.",
     "You will have a great day",
   ];
+
   void _randomFortune() {
     var random = Random();
     int fortune = random.nextInt(_fortuneList.length);
@@ -55,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
       print("New Fortune==>: $_currentFortune");
     });
   }
+
   @override
   Widget build(BuildContext context) {
     print("Building the Widget");
@@ -70,6 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 200,
               fit: BoxFit.cover,
             ),
+
             const Text(
               "Your Fortune Teller",
               style: TextStyle(
@@ -77,6 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
+
             const Text(
               "Your Fortune is:",
               style: TextStyle(
@@ -84,6 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
+
             const SizedBox(height: 20),
             FloatingActionButton.extended(
               onPressed: _randomFortune,
